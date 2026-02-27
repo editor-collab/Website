@@ -1,0 +1,9 @@
+import CommunitySection from "@/components/sections/CommunitySection";
+
+export default function CommunityPage() {
+  return (
+    <main>
+      <CommunitySection />
+    </main>
+  );
+}

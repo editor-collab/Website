@@ -1,0 +1,4 @@
+{
+  "stripeUrl": "https://buy.stripe.com/aEUbLb38R2Cw91K9AA",
+  "beforePurchaseContent": "Once you finalize your purchase, You are getting redirected to a page with your code.\nIn case you close the page before seeing the code, You can go to the email put on the Stripe Form.\n\nIf you didnt get an email, Please [Contact Us](/contact) so we can solve your problem.\n---\nIf you have any questions before buying, Check the [FAQ](/faq) or [Contact Us](/contact)"
+}

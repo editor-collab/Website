@@ -1,0 +1,321 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+/*
+  Palette:
+  #FFFFFF  — White
+  #FE3794  — Dragonfruit (hot pink)
+  #FEA3B3  — Cotton Candy (light pink)
+  #FFDFA4  — Soft Peach
+  #367AD4  — Azure Blue
+  #5FD5EC  — Sky Blue
+  #111122  — Ink Black
+*/
+
+/* Custom palette — always the same regardless of theme */
+:root {
+  --pink:       #FE3794;
+  --pink-light: #FEA3B3;
+  --peach:      #FFDFA4;
+  --blue:       #367AD4;
+  --sky:        #5FD5EC;
+}
+
+/* ── Dark theme ───────────────────────────────────────────────────────── */
+:root,
+html.dark,
+[data-theme="dark"] {
+  /* HeroUI tokens */
+  --background: oklch(22% 0.025 258);
+  --foreground: oklch(100% 0 0);
+  --surface: oklch(22% 0.02 246);
+  --surface-foreground: oklch(100% 0 0);
+  --overlay: oklch(22% 0.02 246);
+  --overlay-foreground: oklch(100% 0 0);
+  --accent: oklch(67.08% 0.2012 0.95);
+  --accent-foreground: oklch(100% 0 0);
+  --success: oklch(81.84% 0.0823 197.89);
+  --success-foreground: oklch(18.81% 0.0211 246.40);
+  --warning: oklch(91.86% 0.0923 42.73);
+  --warning-foreground: oklch(18.81% 0.0211 246.40);
+  --danger: oklch(57% 0.22 0.95);
+  --danger-foreground: oklch(100% 0 0);
+  --default: oklch(27% 0.015 246);
+  --default-foreground: oklch(100% 0 0);
+  --muted: oklch(55% 0.01 246);
+  --focus: oklch(58.45% 0.1442 219.66);
+  --link: oklch(81.84% 0.0823 197.89);
+  --border: oklch(30% 0.015 246);
+  --separator: oklch(28% 0.015 246);
+  --field-background: oklch(22% 0.02 246);
+  --field-foreground: oklch(100% 0 0);
+  --field-placeholder: oklch(55% 0.01 246);
+  --field-border: oklch(30% 0.015 246);
+
+  /* Adaptive component vars */
+  --ink:              #1a1a30;
+  --card-bg:          rgba(255,255,255,0.03);
+  --card-bg-hover:    rgba(255,255,255,0.055);
+  --card-border:      rgba(255,255,255,0.07);
+  --card-border-hover:rgba(255,255,255,0.14);
+  --dot-color:        rgba(255,255,255,0.022);
+  --fade-color:       #1a1a30;
+  --star-empty:       rgba(255,255,255,0.15);
+}
+
+/* ── Light theme ──────────────────────────────────────────────────────── */
+html.light,
+[data-theme="light"] {
+  /* HeroUI tokens */
+  --background: oklch(96% 0.01 258);
+  --foreground: oklch(22% 0.025 258);
+  --surface: oklch(94% 0.01 258);
+  --surface-foreground: oklch(22% 0.025 258);
+  --overlay: oklch(94% 0.01 258);
+  --overlay-foreground: oklch(22% 0.025 258);
+  --accent: oklch(67.08% 0.2012 0.95);
+  --accent-foreground: oklch(100% 0 0);
+  --success: oklch(81.84% 0.0823 197.89);
+  --success-foreground: oklch(18.81% 0.0211 246.40);
+  --warning: oklch(91.86% 0.0923 42.73);
+  --warning-foreground: oklch(18.81% 0.0211 246.40);
+  --danger: oklch(57% 0.22 0.95);
+  --danger-foreground: oklch(100% 0 0);
+  --default: oklch(88% 0.01 258);
+  --default-foreground: oklch(22% 0.025 258);
+  --muted: oklch(50% 0.01 258);
+  --focus: oklch(58.45% 0.1442 219.66);
+  --link: oklch(58.45% 0.1442 219.66);
+  --border: oklch(82% 0.01 258);
+  --separator: oklch(80% 0.01 258);
+  --field-background: oklch(96% 0.01 258);
+  --field-foreground: oklch(22% 0.025 258);
+  --field-placeholder: oklch(55% 0.01 258);
+  --field-border: oklch(80% 0.01 258);
+
+  /* Adaptive component vars */
+  --ink:              #eef2ff;
+  --card-bg:          rgba(0,0,0,0.03);
+  --card-bg-hover:    rgba(0,0,0,0.055);
+  --card-border:      rgba(0,0,0,0.09);
+  --card-border-hover:rgba(0,0,0,0.18);
+  --dot-color:        rgba(0,0,0,0.04);
+  --fade-color:       #eef2ff;
+  --star-empty:       rgba(0,0,0,0.15);
+}
+
+/* ── Light mode text/element overrides ───────────────────────────────── */
+html.light body                   { color: oklch(22% 0.025 258); }
+html.light .text-white            { color: oklch(22% 0.025 258) !important; }
+html.light .text-zinc-300         { color: #52525b !important; }
+html.light .text-zinc-400         { color: #3f3f46 !important; }
+html.light .text-zinc-500         { color: #52525b !important; }
+html.light .text-zinc-600         { color: #52525b !important; }
+html.light .text-neutral-300      { color: #404040 !important; }
+html.light .text-zinc-400.font-medium { color: oklch(22% 0.025 258) !important; }
+/* ── Header pill ─────────────────────────────────────────────────────── */
+.header-pill                     { background: rgba(0,0,0,0.50);        border-color: rgba(255,255,255,0.40); }
+html.light .header-pill          { background: rgba(230,236,255,0.80);  border-color: rgba(0,0,0,0.12); }
+.header-pill.scrolled            { background: rgba(0,0,0,0.15);        border-color: rgba(255,255,255,0.15); }
+html.light .header-pill.scrolled { background: rgba(255,255,255,0.85);  border-color: rgba(0,0,0,0.14); }
+
+/* ── Header icon button hover ────────────────────────────────────────── */
+.header-icon-btn:hover            { background: rgba(255,255,255,0.10); }
+html.light .header-icon-btn:hover { background: rgba(0,0,0,0.07); }
+
+/* ── Header logo — invert to black in light mode ─────────────────────── */
+.header-logo                      { filter: none; transition: filter 0.2s; }
+html.light .header-logo           { filter: brightness(0); }
+
+/* ── Hamburger lines — white in dark, near-black in light ────────────── */
+.hamburger-line                   { background-color: #ffffff; }
+html.light .hamburger-line        { background-color: oklch(22% 0.025 258); }
+
+/* ── Hero carousel card ──────────────────────────────────────────────── */
+.hero-slide-card            { border: 1px solid rgba(255,255,255,0.10); background: rgba(255,255,255,0.03); }
+html.light .hero-slide-card { border: 1px solid rgba(0,0,0,0.10); background: rgba(0,0,0,0.04); }
+
+/* ── Slide nav arrows ────────────────────────────────────────────────── */
+.slide-nav-btn            { background: rgba(0,0,0,0.40); color: #ffffff; }
+.slide-nav-btn:hover      { background: rgba(0,0,0,0.65); }
+html.light .slide-nav-btn            { background: rgba(0,0,0,0.10); color: #1a1a30; }
+html.light .slide-nav-btn:hover      { background: rgba(0,0,0,0.20); }
+
+html.light .wave-path-1 { fill: #b8d4ef; }
+html.light .wave-path-2 { fill: #c8def5; }
+html.light .wave-path-3 { fill: #d8eaf9; }
+html.light .wave-path-4 { fill: #e6f3fc; }
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-dragonfruit: #FE3794;
+  --color-cotton-candy: #FEA3B3;
+  --color-soft-peach: #FFDFA4;
+  --color-azure: #367AD4;
+  --color-sky-blue: #5FD5EC;
+  --color-ink: var(--ink);
+  --font-sans: 'Nunito', Arial, sans-serif;
+  --font-mono: 'Nunito', Arial, sans-serif;
+}
+
+body {
+  background: var(--ink);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* ── Anti-banding noise grain overlay ────────────────────────────────
+   A very faint SVG fractal-noise texture rendered over every page.
+   It dithers the 8-bit gradient steps in blur-3xl ambient blobs,
+   eliminating visible color banding without changing any colours.
+────────────────────────────────────────────────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* Force HeroUI components and form elements to inherit Nunito from body */
+*, button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* ============ CARTOON ANIMATED BACKGROUND ============ */
+
+.hero-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle dot-grid pattern for that cartoon grid feel */
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1.5px, transparent 1.5px);
+  background-size: 30px 30px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ── Wave background layers ───────────────────────────────────────── */
+.wave-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* 4 wave layers */
+.wave-path-1 { fill: #2a6ab8; }
+.wave-path-2 { fill: #367AD4; }
+.wave-path-3 { fill: #4ab5e0; }
+.wave-path-4 { fill: #5FD5EC; }
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wave-1 { height: 34%; }
+.wave-2 { height: 26%; }
+.wave-3 { height: 19%; }
+.wave-4 { height: 12%; }
+
+/* ── Wave flow animation ──────────────────────────────────────────────
+   Each SVG is 200 % wide (two tiled copies of the path).
+   translateX(-50 %) shifts it exactly one viewport-width to the left,
+   creating a seamless infinite scroll effect.
+   Different durations give each layer a parallax feel.
+────────────────────────────────────────────────────────────────────── */
+@keyframes wave-flow {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.wave-anim   { animation-name: wave-flow; animation-timing-function: linear; animation-iteration-count: infinite; }
+.wave-anim-1 { animation-duration: 10s; }
+.wave-anim-2 { animation-duration: 14s; }
+.wave-anim-3 { animation-duration: 18s; }
+.wave-anim-4 { animation-duration: 24s; }
+
+/* Shapes layer */
+.cartoon-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/*
+  Cursor entrance animations — each one comes in from a different
+  direction, mimicking how a real mouse slides onto the screen.
+  cubic-bezier(0.22, 0.61, 0.36, 1) = fast start, smooth decel,
+  no bounce (real mice don't bounce).
+*/
+@keyframes cursor-from-topleft  {
+  from { opacity: 0; translate: -70px -50px; }
+  to   { opacity: 1; translate:   0px   0px; }
+}
+@keyframes cursor-from-topright {
+  from { opacity: 0; translate:  70px -50px; }
+  to   { opacity: 1; translate:   0px   0px; }
+}
+@keyframes cursor-from-botright {
+  from { opacity: 0; translate:  70px  50px; }
+  to   { opacity: 1; translate:   0px   0px; }
+}
+@keyframes cursor-from-left {
+  from { opacity: 0; translate: -90px   0px; }
+  to   { opacity: 1; translate:   0px   0px; }
+}
+@keyframes cursor-from-right {
+  from { opacity: 0; translate:  90px   0px; }
+  to   { opacity: 1; translate:   0px   0px; }
+}
+@keyframes cursor-from-bottom {
+  from { opacity: 0; translate:   0px  60px; }
+  to   { opacity: 1; translate:   0px   0px; }
+}
+
+
+/* ============ UI COMPONENTS ============ */
+
+/* Screenshot card styling */
+.screenshot-card {
+  background: linear-gradient(145deg, rgba(254, 55, 148, 0.08), rgba(54, 122, 212, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.screenshot-card-inner {
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+}
+
+/* Dot navigation */
+.dot {
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #FE3794;
+  box-shadow: 0 0 8px rgba(254, 55, 148, 0.5);
+}
+
+/* ============ REVIEWS CAROUSEL ============ */
+
+@keyframes reviews-enter {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}

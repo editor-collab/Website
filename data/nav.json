@@ -1,0 +1,11 @@
+{
+  "mainLinks": [
+    { "label": "Home",       "href": "/" },
+    { "label": "Pricing",    "href": "/pricing" },
+    { "label": "Changelogs", "href": "/changelog" },
+    { "label": "Community",  "href": "/community" },
+    { "label": "Contact",    "href": "/contact" },
+    { "label": "FAQ",        "href": "/faq" }
+  ],
+  "discordUrl": "https://discord.gg/GFMnMMkpBq"
+}

@@ -1,0 +1,28 @@
+{
+  "showcases": [
+    {
+      "tag": "Player Collab",
+      "tagColor": "#FE3794",
+      "title": "Grief Created From Memory With Editor Collab",
+      "description": "TCD, a group consisting of popular Geometry Dash players, has created Grief using Editor Collab entirely from memory. Watch how they utilized real-time collaboration to create this level!",
+      "cta": { "label": "Watch on YouTube", "href": "https://www.youtube.com/watch?v=XuRaio-BHK0" },
+      "media": { "type": "youtube", "id": "XuRaio-BHK0" }
+    },
+    {
+      "tag": "Creator Collab",
+      "tagColor": "#5FD5EC",
+      "title": "First Rated Level Using Editor Collab",
+      "description": "Synergize, by Tricipital and 19 other creators, has become the first rated level in Geometry Dash that was created fully with Editor Collab. Watch what they were able to create with real-time collaboration!",
+      "cta": null,
+      "media": { "type": "youtube", "id": "26ngwK4Q-dI" }
+    }
+  ],
+  "cta": {
+    "title": "Ready to achieve similar results?",
+    "description": "Get Editor Collab and start creating with your friends today. Whether you're a player or a creator, our platform is designed to enhance your collaborative experience.",
+    "buttons": [
+      { "label": "Get it now",   "href": "/pricing",                    "primary": true  },
+      { "label": "Join Discord", "href": "https://discord.gg/GFMnMMkpBq", "primary": false }
+    ]
+  }
+}

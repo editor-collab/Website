@@ -1,0 +1,55 @@
+{
+  "plans": [
+    {
+      "id": "free",
+      "name": "Free",
+      "price": "Free",
+      "priceSub": "No credit card needed",
+      "description": "Join any hosted level as a viewer or editor.",
+      "accent": "#5FD5EC",
+      "featured": false,
+      "badge": null,
+      "cta": {
+        "label": "Get Started",
+        "href": "https://geode-sdk.org/mods/alk.editor-collab"
+      },
+      "highlights": [
+        "Join hosted levels",
+        "Real-time sync across all editors",
+        "Works on Windows, MacOS, Android & iOS"
+      ]
+    },
+    {
+      "id": "host",
+      "name": "Host",
+      "price": "$10",
+      "priceSub": "One-time purchase",
+      "description": "Unlock the ability to host and share your levels with anyone.",
+      "accent": "#FE3794",
+      "featured": true,
+      "badge": "Most Popular",
+      "cta": {
+        "label": "Purchase",
+        "href": "https://buy.stripe.com/aEUbLb38R2Cw91K9AA"
+      },
+      "highlights": [
+        "Everything in Free",
+        "Host unlimited levels (One level at a time per key)",
+        "Add people to your collaborations.",
+        "Edit user's permissions."
+      ]
+    }
+  ],
+  "comparison": [
+    { "category": "General" },
+    { "feature": "Download & install the mod",  "free": true,  "host": true  },
+    { "feature": "Join hosted levels",          "free": true,  "host": true  },
+    { "feature": "Real-time collaboration",     "free": true,  "host": true  },
+    { "feature": "All platforms supported",     "free": true,  "host": true  },
+    { "category": "Hosting" },
+    { "feature": "Host levels",                                             "free": false, "host": true  },
+    { "feature": "Unlimited hosted levels (One level at a time per key)",  "free": false, "host": true  },
+    { "feature": "Let others collaborate with you.",                        "free": false, "host": true  },
+    { "feature": "Limit permissions to each one of the collaborators.",     "free": false, "host": true  }
+  ]
+}

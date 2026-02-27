@@ -1,0 +1,38 @@
+{
+  "contacts": [
+    {
+      "icon": "solar:letter-bold",
+      "accent": "#367AD4",
+      "label": "Email",
+      "value": "alk.editorcollab@gmail.com",
+      "href": "mailto:alk.editorcollab@gmail.com"
+    },
+    {
+      "icon": "ic:baseline-discord",
+      "accent": "#5865F2",
+      "label": "Discord",
+      "value": "Join our community",
+      "href": "https://discord.com/invite/GFMnMMkpBq"
+    }
+  ],
+  "socials": [
+    {
+      "icon": "ic:baseline-discord",
+      "label": "Discord",
+      "accent": "#5865F2",
+      "href": "https://discord.gg/GFMnMMkpBq"
+    },
+    {
+      "icon": "fa6-brands:x-twitter",
+      "label": "X",
+      "accent": "#e7e9ea",
+      "href": "https://twitter.com/alk1m123"
+    },
+    {
+      "icon": "mdi:github",
+      "label": "GitHub",
+      "accent": "#a1a1aa",
+      "href": "https://github.com/altalk23"
+    }
+  ]
+}

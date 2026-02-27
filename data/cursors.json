@@ -1,0 +1,11 @@
+{
+  "lightColors": ["#FFDFA4", "#FEA3B3", "#FFFFFF"],
+  "cursors": [
+    { "id": 1, "color": "#FE3794", "name": "itsccrysx", "top": "11%", "left": "6%",  "delay": "0.05s", "anim": "cursor-from-botright" },
+    { "id": 2, "color": "#5FD5EC", "name": "alk1m123",  "top": "63%", "left": "82%", "delay": "0.25s", "anim": "cursor-from-botright" },
+    { "id": 3, "color": "#FFDFA4", "name": "hjfod",     "top": "15%", "left": "76%", "delay": "0.45s", "anim": "cursor-from-botright" },
+    { "id": 4, "color": "#367AD4", "name": "imfiree",   "top": "52%", "left": "3%",  "delay": "0.15s", "anim": "cursor-from-botright" },
+    { "id": 5, "color": "#FEA3B3", "name": "qimiko",    "top": "78%", "left": "42%", "delay": "0.55s", "anim": "cursor-from-botright" },
+    { "id": 6, "color": "#FFFFFF", "name": "fleeym",    "top": "32%", "left": "90%", "delay": "0.35s", "anim": "cursor-from-botright" }
+  ]
+}

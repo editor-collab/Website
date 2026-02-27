@@ -1,0 +1,33 @@
+{
+  "avatarAccents": ["#FE3794", "#367AD4", "#5FD5EC", "#FFDFA4", "#FEA3B3", "#4ab5e0"],
+  "reviews": [
+    {
+      "rating": 10,
+      "name": "ninXout",
+      "role": "Lead Developer · Geode",
+      "pfp": "/users/ninx.png",
+      "message": "As someone who has been using Editor Collab since 2.1, I can't recommend it enough! It felt super natural to use, which I didn't expect for a mod of this scale."
+    },
+    {
+      "rating": 10,
+      "name": "itsccrysx",
+      "role": "Web Developer · Editor Collab",
+      "pfp": "/users/crys.png",
+      "message": "Im in love with how Editor Collab smoothly allows me to collaborate with other people, Currently creating a level with it and there has been no problems so far."
+    },
+    {
+      "rating": 10,
+      "name": "kiannuh",
+      "role": "Level Creator",
+      "pfp": "/users/kiannuh.png",
+      "message": "Editor Collab is a one-of-a-kind mod! It provides a very enjoyable creating experience with your friends, and it's super hands-on. Highly recommended."
+    },
+    {
+      "rating": 10,
+      "name": "rifct",
+      "role": "Level Creator",
+      "pfp": "/users/rifct.png",
+      "message": "Super cool mod! Makes creating levels so much more fun with friends in real time, especially with the Globed integration :)"
+    }
+  ]
+}

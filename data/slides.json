@@ -1,0 +1,32 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "label": "Live, Always.",
+      "description": "See every change your collaborators make.",
+      "accent": "#FE3794",
+      "src": "/assets/Placeholder.png"
+    },
+    {
+      "id": 2,
+      "label": "Stay within the limits.",
+      "description": "As a host, You can limit each collaborator's permissions.",
+      "accent": "#5FD5EC",
+      "src": "/assets/Placeholder.png"
+    },
+    {
+      "id": 3,
+      "label": "Keep your ideas, In one editor.",
+      "description": "Whether is a Megacollab, Collab or a casual project, Editor collab is for you.",
+      "accent": "#FFDFA4",
+      "src": "/assets/Placeholder.png"
+    },
+    {
+      "id": 4,
+      "label": "Made for simplicity, And efficiency.",
+      "description": "The creator of Editor Collab (alk1m123) is a Lead Developer of geode, Making Editor Collab very trusted across the community.",
+      "accent": "#FEA3B3",
+      "src": "/assets/Placeholder.png"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "features": [
+    {
+      "icon": "solar:users-group-two-rounded-bold",
+      "accent": "#FE3794",
+      "title": "Real-Time Collaboration",
+      "description": "Collaborate seamlessly with your friends in real-time, no matter where you are."
+    },
+    {
+      "icon": "solar:lock-keyhole-bold",
+      "accent": "#FE3794",
+      "title": "Full Control",
+      "description": "You have full control over who can edit your levels, ensuring a secure and collaborative environment."
+    },
+    {
+      "icon": "solar:global-bold",
+      "accent": "#FE3794",
+      "title": "100% Online",
+      "description": "You can leave your levels online for as long as you want, the server will keep them safe."
+    },
+    {
+      "icon": "solar:devices-bold",
+      "accent": "#FE3794",
+      "title": "Multi-Platform Support",
+      "description": "Access your levels from any device, anytime, anywhere."
+    },
+    {
+      "icon": "solar:people-nearby-bold",
+      "accent": "#FE3794",
+      "title": "Invites For Free",
+      "description": "Invite your friends to collaborate on your levels for free, no additional payment required."
+    },
+    {
+      "icon": "solar:rocket-bold",
+      "accent": "#FE3794",
+      "title": "Mod Support",
+      "description": "Enjoy seamless integration with popular mods like Globed and BetterEdit, enhancing your experience."
+    }
+  ]
+}
